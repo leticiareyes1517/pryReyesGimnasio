@@ -6,5 +6,10 @@ namespace pryReyesGimnasio
         {
             InitializeComponent();
         }
+
+        private void cboTurno_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
