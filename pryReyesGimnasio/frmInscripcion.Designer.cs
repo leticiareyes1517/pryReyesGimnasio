@@ -41,14 +41,14 @@
             grpDatosPersonales = new GroupBox();
             txtMeses = new TextBox();
             grpPlan = new GroupBox();
+            chkCasillero = new CheckBox();
             lblCuotas = new Label();
             cboCuotas = new ComboBox();
             grpFormadePago = new GroupBox();
-            rbtEfectivo = new RadioButton();
             rbtTarjeta = new RadioButton();
+            rbtEfectivo = new RadioButton();
             btnCalcular = new Button();
             btnLimpiar = new Button();
-            chkCasillero = new CheckBox();
             grpDatosPersonales.SuspendLayout();
             grpPlan.SuspendLayout();
             grpFormadePago.SuspendLayout();
@@ -175,6 +175,16 @@
             grpPlan.TabStop = false;
             grpPlan.Text = "Plan";
             // 
+            // chkCasillero
+            // 
+            chkCasillero.AutoSize = true;
+            chkCasillero.Location = new Point(132, 59);
+            chkCasillero.Name = "chkCasillero";
+            chkCasillero.Size = new Size(142, 19);
+            chkCasillero.TabIndex = 0;
+            chkCasillero.Text = "Casillero ($3.000/mes)";
+            chkCasillero.UseVisualStyleBackColor = true;
+            // 
             // lblCuotas
             // 
             lblCuotas.AutoSize = true;
@@ -207,17 +217,6 @@
             grpFormadePago.TabStop = false;
             grpFormadePago.Text = "Forma de Pago";
             // 
-            // rbtEfectivo
-            // 
-            rbtEfectivo.AutoSize = true;
-            rbtEfectivo.Location = new Point(17, 29);
-            rbtEfectivo.Name = "rbtEfectivo";
-            rbtEfectivo.Size = new Size(67, 19);
-            rbtEfectivo.TabIndex = 0;
-            rbtEfectivo.TabStop = true;
-            rbtEfectivo.Text = "Efectivo";
-            rbtEfectivo.UseVisualStyleBackColor = true;
-            // 
             // rbtTarjeta
             // 
             rbtTarjeta.AutoSize = true;
@@ -229,6 +228,17 @@
             rbtTarjeta.Text = "Tarjeta";
             rbtTarjeta.UseVisualStyleBackColor = true;
             // 
+            // rbtEfectivo
+            // 
+            rbtEfectivo.AutoSize = true;
+            rbtEfectivo.Location = new Point(17, 29);
+            rbtEfectivo.Name = "rbtEfectivo";
+            rbtEfectivo.Size = new Size(67, 19);
+            rbtEfectivo.TabIndex = 0;
+            rbtEfectivo.TabStop = true;
+            rbtEfectivo.Text = "Efectivo";
+            rbtEfectivo.UseVisualStyleBackColor = true;
+            // 
             // btnCalcular
             // 
             btnCalcular.Location = new Point(184, 311);
@@ -237,6 +247,7 @@
             btnCalcular.TabIndex = 19;
             btnCalcular.Text = "&Calcular";
             btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // btnLimpiar
             // 
@@ -246,16 +257,6 @@
             btnLimpiar.TabIndex = 20;
             btnLimpiar.Text = "&Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
-            // 
-            // chkCasillero
-            // 
-            chkCasillero.AutoSize = true;
-            chkCasillero.Location = new Point(132, 59);
-            chkCasillero.Name = "chkCasillero";
-            chkCasillero.Size = new Size(142, 19);
-            chkCasillero.TabIndex = 0;
-            chkCasillero.Text = "Casillero ($3.000/mes)";
-            chkCasillero.UseVisualStyleBackColor = true;
             // 
             // frmInscripción
             // 
